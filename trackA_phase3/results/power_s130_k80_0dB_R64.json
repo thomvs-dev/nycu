@@ -1,0 +1,22 @@
+[
+ {
+  "design": "dcim_sm_bp",
+  "lib": "s130",
+  "glitch": false,
+  "trace": "k80_0dB",
+  "cells": 1764,
+  "flops": 106,
+  "fJ_per_MAC": 655.6549104562476,
+  "breakdown_fJ_per_MAC": {
+   "switching": 223.7921363873061,
+   "internal": 214.4559386779437,
+   "clk_pin_internal": 165.58109213105794,
+   "clk_net": 48.13526250000002,
+   "d_hidden": 3.6904807599398994
+  },
+  "leak_nW": 5.216271529000018,
+  "leak_fJ_per_MAC_at_500MHz": 0.0004075212132031264,
+  "check": "32768/32768 outputs bit-exact",
+  "sim_s": 1.4
+ }
+]

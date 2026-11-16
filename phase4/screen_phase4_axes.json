@@ -1,0 +1,736 @@
+{
+ "model": {
+  "PE_fJ_8x8": 143.2,
+  "C_fJ": {
+   "PES": 56.0,
+   "OPT": 11.0
+  },
+  "r_dcim": {
+   "PES": 0.74,
+   "OPT": 1.18
+  },
+  "mem_pJ_bit": {
+   "B1_sram_buffer": {
+    "PES": 0.05,
+    "OPT": 0.34
+   },
+   "B2_tiny_local": {
+    "PES": 0.02,
+    "OPT": 0.05
+   }
+  },
+  "E_RRAM_fJ_MAC": {
+   "PES": 256.0,
+   "OPT": 92.6
+  },
+  "E_MRAM_pJ_bit": {
+   "PES": 0.23,
+   "OPT": 1.2
+  },
+  "P_RET_pW_bit": {
+   "PES": 0.45,
+   "OPT": 2.0
+  },
+  "P_LEAK_ACTIVE_pW_bit": {
+   "PES": 1.0,
+   "OPT": 10.0
+  },
+  "E_WAKE_CIM_nJ": {
+   "PES": 10.0,
+   "OPT": 1.0
+  },
+  "CIM_PERIPH_LEAK_pW_bit": {
+   "PES": 1.0,
+   "OPT": 0.1
+  }
+ },
+ "axis2_sweep_1Mb": [
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 1,
+   "T_s": 0.01,
+   "PES": {
+    "baseline": "sram_retained",
+    "base_nJ": 49.4,
+    "cim_nJ": 49.0,
+    "ratio": 1.01
+   },
+   "OPT": {
+    "baseline": "sram_retained",
+    "base_nJ": 89.28,
+    "cim_nJ": 13.95,
+    "ratio": 6.4
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 1,
+   "T_s": 0.1,
+   "PES": {
+    "baseline": "sram_retained",
+    "base_nJ": 89.9,
+    "cim_nJ": 49.0,
+    "ratio": 1.83
+   },
+   "OPT": {
+    "baseline": "sram_retained",
+    "base_nJ": 269.28,
+    "cim_nJ": 13.95,
+    "ratio": 19.3
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 1,
+   "T_s": 1,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 254.9,
+    "cim_nJ": 49.0,
+    "ratio": 5.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1219.28,
+    "cim_nJ": 13.95,
+    "ratio": 87.4
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 1,
+   "T_s": 10,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 254.9,
+    "cim_nJ": 49.0,
+    "ratio": 5.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1219.28,
+    "cim_nJ": 13.95,
+    "ratio": 87.4
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 1,
+   "T_s": 100,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 254.9,
+    "cim_nJ": 49.0,
+    "ratio": 5.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1219.28,
+    "cim_nJ": 13.95,
+    "ratio": 87.4
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 1,
+   "T_s": 1000,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 254.9,
+    "cim_nJ": 49.0,
+    "ratio": 5.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1219.28,
+    "cim_nJ": 13.95,
+    "ratio": 87.4
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 10,
+   "T_s": 0.01,
+   "PES": {
+    "baseline": "sram_retained",
+    "base_nJ": 273.55,
+    "cim_nJ": 400.0,
+    "ratio": 0.68
+   },
+   "OPT": {
+    "baseline": "sram_retained",
+    "base_nJ": 262.8,
+    "cim_nJ": 130.5,
+    "ratio": 2.01
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 10,
+   "T_s": 0.1,
+   "PES": {
+    "baseline": "sram_retained",
+    "base_nJ": 314.05,
+    "cim_nJ": 400.0,
+    "ratio": 0.79
+   },
+   "OPT": {
+    "baseline": "sram_retained",
+    "base_nJ": 442.8,
+    "cim_nJ": 130.5,
+    "ratio": 3.39
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 10,
+   "T_s": 1,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 479.05,
+    "cim_nJ": 400.0,
+    "ratio": 1.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1392.8,
+    "cim_nJ": 130.5,
+    "ratio": 10.67
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 10,
+   "T_s": 10,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 479.05,
+    "cim_nJ": 400.0,
+    "ratio": 1.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1392.8,
+    "cim_nJ": 130.5,
+    "ratio": 10.67
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 10,
+   "T_s": 100,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 479.05,
+    "cim_nJ": 400.0,
+    "ratio": 1.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1392.8,
+    "cim_nJ": 130.5,
+    "ratio": 10.67
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 10,
+   "T_s": 1000,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 479.05,
+    "cim_nJ": 400.0,
+    "ratio": 1.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1392.8,
+    "cim_nJ": 130.5,
+    "ratio": 10.67
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 100,
+   "T_s": 0.01,
+   "PES": {
+    "baseline": "sram_retained",
+    "base_nJ": 2514.98,
+    "cim_nJ": 3910.0,
+    "ratio": 0.64
+   },
+   "OPT": {
+    "baseline": "sram_retained",
+    "base_nJ": 1997.98,
+    "cim_nJ": 1296.0,
+    "ratio": 1.54
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 100,
+   "T_s": 0.1,
+   "PES": {
+    "baseline": "sram_retained",
+    "base_nJ": 2555.48,
+    "cim_nJ": 3910.0,
+    "ratio": 0.65
+   },
+   "OPT": {
+    "baseline": "sram_retained",
+    "base_nJ": 2177.98,
+    "cim_nJ": 1296.0,
+    "ratio": 1.68
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 100,
+   "T_s": 1,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 2720.48,
+    "cim_nJ": 3910.0,
+    "ratio": 0.7
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 3127.98,
+    "cim_nJ": 1296.0,
+    "ratio": 2.41
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 100,
+   "T_s": 10,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 2720.48,
+    "cim_nJ": 3910.0,
+    "ratio": 0.7
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 3127.98,
+    "cim_nJ": 1296.0,
+    "ratio": 2.41
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 100,
+   "T_s": 100,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 2720.48,
+    "cim_nJ": 3910.0,
+    "ratio": 0.7
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 3127.98,
+    "cim_nJ": 1296.0,
+    "ratio": 2.41
+   }
+  },
+  {
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 100,
+   "T_s": 1000,
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 2720.48,
+    "cim_nJ": 3910.0,
+    "ratio": 0.7
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 3127.98,
+    "cim_nJ": 1296.0,
+    "ratio": 2.41
+   }
+  }
+ ],
+ "axis2_hosts": [
+  {
+   "name": "S1 vibration condition monitoring, FC autoencoder, 0.4 Mb",
+   "n_w": 50000,
+   "weight_Mb": 0.4,
+   "R_w": 1,
+   "T_s": 10,
+   "host_uJ_per_wake": [
+    0.1,
+    3000.0
+   ],
+   "note": "host per wake: 0.1 uJ (custom 90.7 nW chip class) to 3 mJ (MEMS accelerometer + ADC + MCU) [A]",
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 101.96,
+    "cim_nJ": 25.6,
+    "ratio": 3.98
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 487.71,
+    "cim_nJ": 6.18,
+    "ratio": 78.92
+   },
+   "saving_share_pct": [
+    0.003,
+    81.933
+   ]
+  },
+  {
+   "name": "S1 vibration condition monitoring, FC autoencoder, 8 Mb",
+   "n_w": 1000000,
+   "weight_Mb": 8.0,
+   "R_w": 1,
+   "T_s": 10,
+   "host_uJ_per_wake": [
+    0.1,
+    3000.0
+   ],
+   "note": "same host range",
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 2039.24,
+    "cim_nJ": 322.0,
+    "ratio": 6.33
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 9754.24,
+    "cim_nJ": 104.6,
+    "ratio": 93.25
+   },
+   "saving_share_pct": [
+    0.057,
+    97.924
+   ]
+  },
+  {
+   "name": "S2 battery-free sensor tag, MLP, 0.08 Mb",
+   "n_w": 10000,
+   "weight_Mb": 0.08,
+   "R_w": 1,
+   "T_s": 5,
+   "host_uJ_per_wake": [
+    1.0,
+    10.0
+   ],
+   "note": "host per wake: low-power sensor + backscatter 1-10 uJ [A]",
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 20.39,
+    "cim_nJ": 13.12,
+    "ratio": 1.55
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 97.54,
+    "cim_nJ": 2.04,
+    "ratio": 47.91
+   },
+   "saving_share_pct": [
+    0.073,
+    8.701
+   ]
+  },
+  {
+   "name": "S2 battery-free sensor tag, MLP, 1 Mb",
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 1,
+   "T_s": 5,
+   "host_uJ_per_wake": [
+    1.0,
+    10.0
+   ],
+   "note": "same host range",
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 254.9,
+    "cim_nJ": 49.0,
+    "ratio": 5.2
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1219.28,
+    "cim_nJ": 13.95,
+    "ratio": 87.4
+   },
+   "saving_share_pct": [
+    2.008,
+    54.312
+   ]
+  },
+  {
+   "name": "S2 battery-free sensor tag, 1D-CNN R_w=20, 1 Mb",
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "R_w": 20,
+   "T_s": 5,
+   "host_uJ_per_wake": [
+    1.0,
+    10.0
+   ],
+   "note": "conv reuse 20",
+   "PES": {
+    "baseline": "mram_direct",
+    "base_nJ": 728.1,
+    "cim_nJ": 790.0,
+    "ratio": 0.92
+   },
+   "OPT": {
+    "baseline": "mram_direct",
+    "base_nJ": 1585.6,
+    "cim_nJ": 260.0,
+    "ratio": 6.1
+   },
+   "saving_share_pct": [
+    -0.577,
+    51.269
+   ]
+  }
+ ],
+ "axis2_continuous": [
+  {
+   "name": "S3 wearable ECG/PPG GRU, 1 Mb, 250 steps/s",
+   "n_w": 125000,
+   "weight_Mb": 1.0,
+   "steps_per_s": 250,
+   "MMAC_s": 31.25,
+   "host_uW": [
+    100.0,
+    1000.0
+   ],
+   "note": "patch power 0.1-1 mW [A]",
+   "PES": {
+    "sram_B2_uW": 12.23,
+    "mram_direct_uW": 63.73,
+    "dcim_uW": 17.8,
+    "rram_cim_uW": 10.75,
+    "ratio_rram_vs_best": 1.14,
+    "ratio_dcim_vs_sram": 1.19
+   },
+   "OPT": {
+    "sram_B2_uW": 27.32,
+    "mram_direct_uW": 304.82,
+    "dcim_uW": 5.14,
+    "rram_cim_uW": 3.34,
+    "ratio_rram_vs_best": 8.19,
+    "ratio_dcim_vs_sram": 3.57
+   },
+   "saving_share_pct": [
+    0.15,
+    23.98
+   ]
+  },
+  {
+   "name": "S3 wearable GRU, 0.25 Mb, 50 steps/s",
+   "n_w": 31250,
+   "weight_Mb": 0.25,
+   "steps_per_s": 50,
+   "MMAC_s": 1.56,
+   "host_uW": [
+    100.0,
+    1000.0
+   ],
+   "note": "small model",
+   "PES": {
+    "sram_B2_uW": 0.81,
+    "mram_direct_uW": 3.19,
+    "dcim_uW": 2.89,
+    "rram_cim_uW": 0.74,
+    "ratio_rram_vs_best": 1.1,
+    "ratio_dcim_vs_sram": 1.06
+   },
+   "OPT": {
+    "sram_B2_uW": 3.37,
+    "mram_direct_uW": 15.24,
+    "dcim_uW": 0.46,
+    "rram_cim_uW": 0.19,
+    "ratio_rram_vs_best": 18.01,
+    "ratio_dcim_vs_sram": 2.44
+   },
+   "saving_share_pct": [
+    0.01,
+    3.18
+   ]
+  }
+ ],
+ "axis1_frodokem_static_key": [
+  {
+   "name": "FrodoKEM-640",
+   "n": 640,
+   "A_Mb": 6.14,
+   "R": 8,
+   "weight_bits": 15,
+   "act_bits": 5,
+   "MAC_per_op": 3276800,
+   "PES": {
+    "base_fJ": 261.4,
+    "dcim_fJ": 282.8,
+    "ratio": 0.92
+   },
+   "OPT": {
+    "base_fJ": 272.6,
+    "dcim_fJ": 153.3,
+    "ratio": 1.78
+   }
+  },
+  {
+   "name": "FrodoKEM-976",
+   "n": 976,
+   "A_Mb": 15.24,
+   "R": 8,
+   "weight_bits": 16,
+   "act_bits": 5,
+   "MAC_per_op": 7620608,
+   "PES": {
+    "base_fJ": 275.0,
+    "dcim_fJ": 298.0,
+    "ratio": 0.92
+   },
+   "OPT": {
+    "base_fJ": 290.0,
+    "dcim_fJ": 162.7,
+    "ratio": 1.78
+   }
+  },
+  {
+   "name": "FrodoKEM-1344",
+   "n": 1344,
+   "A_Mb": 28.9,
+   "R": 8,
+   "weight_bits": 16,
+   "act_bits": 4,
+   "MAC_per_op": 14450688,
+   "PES": {
+    "base_fJ": 239.2,
+    "dcim_fJ": 249.6,
+    "ratio": 0.96
+   },
+   "OPT": {
+    "base_fJ": 254.2,
+    "dcim_fJ": 132.4,
+    "ratio": 1.92
+   }
+  }
+ ],
+ "axis1_classic_mceliece": {
+  "note": "Encapsulation syndrome = XOR of t columns of the public key (sparse error vector). mceliece348864: t=64, column height 768 b, key 2.09 Mb [M spec].",
+  "bits_read_digital": 49152,
+  "cells_in_dense_array": 2088960,
+  "dense_over_sparse": 42.5
+ },
+ "axis4_analog_solver": {
+  "crossover": [
+   {
+    "programming": "write-verify, EMBER 1 b/cell 0.40 nJ/bit [M]",
+    "n_crossover": [
+     1908,
+     2055
+    ]
+   },
+   {
+    "programming": "write-verify, EMBER 2 b/cell 1.2 nJ/bit [M]",
+    "n_crossover": [
+     5724,
+     6165
+    ]
+   },
+   {
+    "programming": "one-shot predictive programming, no verify [A]",
+    "n_crossover": [
+     477,
+     51
+    ]
+   }
+  ],
+  "endurance_lifetime": [
+   {
+    "update_rate_Hz": 1,
+    "lifetime_endurance_1e4_s": 10000.0,
+    "lifetime_endurance_1e6_h": 277.78
+   },
+   {
+    "update_rate_Hz": 100,
+    "lifetime_endurance_1e4_s": 100.0,
+    "lifetime_endurance_1e6_h": 2.78
+   },
+   {
+    "update_rate_Hz": 1000,
+    "lifetime_endurance_1e4_s": 10.0,
+    "lifetime_endurance_1e6_h": 0.28
+   }
+  ],
+  "note": "If A is fixed, digital precomputes A^-1 (or a factorisation) once; each solve is then an n^2 MVM, i.e. axis 1. Analog INV only helps when A changes per use, where it pays n^2 writes."
+ },
+ "axis3_small_LM_decode": [
+  {
+   "params": 125000000.0,
+   "weight_bits": 4,
+   "weight_Gb": 0.5,
+   "PES": {
+    "ratio_vs_DRAM": 38.9,
+    "ratio_vs_dense_eNVM": 3.4,
+    "rram_area_mm2": 250
+   },
+   "OPT": {
+    "ratio_vs_DRAM": 232.5,
+    "ratio_vs_dense_eNVM": 47.1,
+    "rram_area_mm2": 62
+   }
+  },
+  {
+   "params": 500000000.0,
+   "weight_bits": 4,
+   "weight_Gb": 2.0,
+   "PES": {
+    "ratio_vs_DRAM": 38.9,
+    "ratio_vs_dense_eNVM": 3.4,
+    "rram_area_mm2": 1000
+   },
+   "OPT": {
+    "ratio_vs_DRAM": 232.5,
+    "ratio_vs_dense_eNVM": 47.1,
+    "rram_area_mm2": 250
+   }
+  },
+  {
+   "params": 1000000000.0,
+   "weight_bits": 4,
+   "weight_Gb": 4.0,
+   "PES": {
+    "ratio_vs_DRAM": 38.9,
+    "ratio_vs_dense_eNVM": 3.4,
+    "rram_area_mm2": 2000
+   },
+   "OPT": {
+    "ratio_vs_DRAM": 232.5,
+    "ratio_vs_dense_eNVM": 47.1,
+    "rram_area_mm2": 500
+   }
+  }
+ ]
+}

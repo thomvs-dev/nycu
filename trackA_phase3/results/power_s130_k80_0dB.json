@@ -1,0 +1,102 @@
+[
+ {
+  "design": "sgn_tree",
+  "lib": "s130",
+  "glitch": false,
+  "trace": "k80_0dB",
+  "cells": 5591,
+  "flops": 561,
+  "fJ_per_MAC": 667.1532641570736,
+  "breakdown_fJ_per_MAC": {
+   "switching": 216.83315972087175,
+   "internal": 218.87138336780487,
+   "clk_pin_internal": 175.26602393494775,
+   "clk_net": 50.95072125,
+   "d_hidden": 5.231975883449289
+  },
+  "leak_nW": 20.42675153780126,
+  "leak_fJ_per_MAC_at_500MHz": 0.0003191679927781447,
+  "check": "32768/32768 outputs bit-exact",
+  "sim_s": 0.4
+ },
+ {
+  "design": "sgn_tree_ni",
+  "lib": "s130",
+  "glitch": false,
+  "trace": "k80_0dB",
+  "cells": 5216,
+  "flops": 177,
+  "fJ_per_MAC": 474.1664983694266,
+  "breakdown_fJ_per_MAC": {
+   "switching": 212.00470001700947,
+   "internal": 189.13636762509475,
+   "clk_pin_internal": 55.297836428673584,
+   "clk_net": 16.07536125,
+   "d_hidden": 1.6522330486488073
+  },
+  "leak_nW": 17.190033231200907,
+  "leak_fJ_per_MAC_at_500MHz": 0.0002685942692375142,
+  "check": "32768/32768 outputs bit-exact",
+  "sim_s": 0.4
+ },
+ {
+  "design": "and_tree_ni",
+  "lib": "s130",
+  "glitch": false,
+  "trace": "k80_0dB",
+  "cells": 3921,
+  "flops": 168,
+  "fJ_per_MAC": 299.8366626530069,
+  "breakdown_fJ_per_MAC": {
+   "switching": 117.91510117080426,
+   "internal": 112.61923151916092,
+   "clk_pin_internal": 52.48608203399497,
+   "clk_net": 15.257970000000002,
+   "d_hidden": 1.558277929046727
+  },
+  "leak_nW": 13.025861817800036,
+  "leak_fJ_per_MAC_at_500MHz": 0.00020352909090312559,
+  "check": "32768/32768 outputs bit-exact",
+  "sim_s": 0.5
+ },
+ {
+  "design": "dcim",
+  "lib": "s130",
+  "glitch": false,
+  "trace": "k80_0dB",
+  "cells": 1588,
+  "flops": 474,
+  "fJ_per_MAC": 1618.0487334972488,
+  "breakdown_fJ_per_MAC": {
+   "switching": 174.56403648309853,
+   "internal": 279.7034887162453,
+   "clk_pin_internal": 888.5143887183506,
+   "clk_net": 258.29563500000006,
+   "d_hidden": 16.971184579554254
+  },
+  "leak_nW": 7.53069107240003,
+  "leak_fJ_per_MAC_at_500MHz": 0.000706002288037503,
+  "check": "32768/32768 outputs bit-exact",
+  "sim_s": 2.5
+ },
+ {
+  "design": "dcim_bp",
+  "lib": "s130",
+  "glitch": false,
+  "trace": "k80_0dB",
+  "cells": 822,
+  "flops": 90,
+  "fJ_per_MAC": 428.33221962899734,
+  "breakdown_fJ_per_MAC": {
+   "switching": 103.38668241841228,
+   "internal": 104.70487677809936,
+   "clk_pin_internal": 168.70526368070236,
+   "clk_net": 49.04347500000003,
+   "d_hidden": 2.4919217517833276
+  },
+  "leak_nW": 2.878233260400015,
+  "leak_fJ_per_MAC_at_500MHz": 0.00026983436816250145,
+  "check": "32768/32768 outputs bit-exact",
+  "sim_s": 1.3
+ }
+]

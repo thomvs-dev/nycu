@@ -1,0 +1,145 @@
+{
+ "fJ_per_MAC": {
+  "sgn_tree": {
+   "n45_zero": 176.8,
+   "n45_unit": 373.1,
+   "s130_zero": 667.2,
+   "s130_unit": 1096.7
+  },
+  "sgn_tree_ni": {
+   "n45_zero": 128.1,
+   "n45_unit": 330.0,
+   "s130_zero": 474.2,
+   "s130_unit": 904.4
+  },
+  "and_tree_ni": {
+   "n45_zero": 81.0,
+   "n45_unit": 173.2,
+   "s130_zero": 299.8,
+   "s130_unit": 484.8
+  },
+  "dcim": {
+   "n45_zero": 384.6,
+   "n45_unit": 462.5,
+   "s130_zero": 1618.0,
+   "s130_unit": 1788.0
+  },
+  "dcim_bp": {
+   "n45_zero": 107.7,
+   "n45_unit": 186.0,
+   "s130_zero": 428.3,
+   "s130_unit": 599.1
+  },
+  "dcim_sm_bp": {
+   "n45_zero": 172.5,
+   "n45_unit": 325.5,
+   "s130_zero": 655.7,
+   "s130_unit": 1007.6
+  }
+ },
+ "ratios": {
+  "and_tree_ni / dcim_bp": {
+   "n45_zero": 0.75,
+   "n45_unit": 0.93,
+   "s130_zero": 0.7,
+   "s130_unit": 0.81
+  },
+  "and_tree_ni / dcim": {
+   "n45_zero": 0.21,
+   "n45_unit": 0.37,
+   "s130_zero": 0.19,
+   "s130_unit": 0.27
+  },
+  "and_tree_ni / dcim_sm_bp": {
+   "n45_zero": 0.47,
+   "n45_unit": 0.53,
+   "s130_zero": 0.46,
+   "s130_unit": 0.48
+  },
+  "sgn_tree_ni / dcim_bp": {
+   "n45_zero": 1.19,
+   "n45_unit": 1.77,
+   "s130_zero": 1.11,
+   "s130_unit": 1.51
+  },
+  "sgn_tree / dcim": {
+   "n45_zero": 0.46,
+   "n45_unit": 0.81,
+   "s130_zero": 0.41,
+   "s130_unit": 0.61
+  }
+ },
+ "breakdown_n45_zero": {
+  "sgn_tree": {
+   "switching": 62.3,
+   "internal": 67.8,
+   "clk_pin_internal": 32.6,
+   "clk_net": 10.1,
+   "d_hidden": 4.0
+  },
+  "sgn_tree_ni": {
+   "switching": 57.5,
+   "internal": 55.8,
+   "clk_pin_internal": 10.3,
+   "clk_net": 3.2,
+   "d_hidden": 1.3
+  },
+  "and_tree_ni": {
+   "switching": 33.8,
+   "internal": 33.2,
+   "clk_pin_internal": 9.8,
+   "clk_net": 3.0,
+   "d_hidden": 1.2
+  },
+  "dcim": {
+   "switching": 50.8,
+   "internal": 104.2,
+   "clk_pin_internal": 165.3,
+   "clk_net": 51.1,
+   "d_hidden": 13.1
+  },
+  "dcim_bp": {
+   "switching": 31.2,
+   "internal": 33.5,
+   "clk_pin_internal": 31.4,
+   "clk_net": 9.7,
+   "d_hidden": 1.9
+  },
+  "dcim_sm_bp": {
+   "switching": 64.4,
+   "internal": 64.9,
+   "clk_pin_internal": 30.8,
+   "clk_net": 9.5,
+   "d_hidden": 2.9
+  }
+ },
+ "leak_fJ_per_MAC_500MHz_n45": {
+  "sgn_tree": 3.46,
+  "sgn_tree_ni": 2.9,
+  "and_tree_ni": 2.14,
+  "dcim": 6.97,
+  "dcim_bp": 2.89,
+  "dcim_sm_bp": 4.88
+ },
+ "R256_zero": {
+  "n45": {
+   "and_tree_ni": 80.1,
+   "dcim_bp": 95.0,
+   "dcim": 372.4
+  },
+  "s130": {
+   "and_tree_ni": 295.2,
+   "dcim_bp": 373.9,
+   "dcim": 1566.3
+  }
+ },
+ "R256_ratio_and_over_dcim_bp": {
+  "n45": 0.84,
+  "s130": 0.79
+ },
+ "second_trace_k40_m5dB_n45_zero": {
+  "and_tree_ni": 81.0,
+  "dcim_bp": 107.8,
+  "dcim": 384.2
+ }
+}

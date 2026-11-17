@@ -1,0 +1,106 @@
+[
+ {
+  "design": "ws_k1",
+  "trace": "gauss",
+  "lib": "n45",
+  "glitch": false,
+  "batch": false,
+  "entries": 1,
+  "cells": 71145,
+  "flops": 346,
+  "fJ_per_MAC": 887.4745615365113,
+  "breakdown_fJ_per_MAC": {
+   "switching": 480.2841908697422,
+   "internal": 378.3922631957295,
+   "clk_pin_internal": 20.095773902511123,
+   "clk_net": 6.212214452812501,
+   "d_hidden": 2.490119115715967
+  },
+  "leak_nW": 1780063.19676376,
+  "leak_fJ_per_MAC_at_500MHz": 27.81348744943375,
+  "macs_per_cycle": 128,
+  "latency": [
+   2
+  ],
+  "check": "65536/65536 outputs bit-exact at lag 2",
+  "sim_s": 2.2
+ },
+ {
+  "design": "ws_k4",
+  "trace": "gauss",
+  "lib": "n45",
+  "glitch": false,
+  "batch": false,
+  "entries": 4,
+  "cells": 80084,
+  "flops": 346,
+  "fJ_per_MAC": 1038.3380486136598,
+  "breakdown_fJ_per_MAC": {
+   "switching": 572.6209452222433,
+   "internal": 436.9674693365399,
+   "clk_pin_internal": 20.096759006072023,
+   "clk_net": 6.212214452812501,
+   "d_hidden": 2.4406605959919987
+  },
+  "leak_nW": 1979837.2736649269,
+  "leak_fJ_per_MAC_at_500MHz": 30.934957401014486,
+  "macs_per_cycle": 128,
+  "latency": [
+   2
+  ],
+  "check": "65536/65536 outputs bit-exact at lag 2",
+  "sim_s": 2.4
+ },
+ {
+  "design": "ws_k8",
+  "trace": "gauss",
+  "lib": "n45",
+  "glitch": false,
+  "batch": false,
+  "entries": 8,
+  "cells": 88052,
+  "flops": 346,
+  "fJ_per_MAC": 1157.1389604182739,
+  "breakdown_fJ_per_MAC": {
+   "switching": 651.5643036906849,
+   "internal": 476.8337059784848,
+   "clk_pin_internal": 20.09693113386367,
+   "clk_net": 6.212214452812501,
+   "d_hidden": 2.4318051624280455
+  },
+  "leak_nW": 2149041.9040202904,
+  "leak_fJ_per_MAC_at_500MHz": 33.57877975031704,
+  "macs_per_cycle": 128,
+  "latency": [
+   2
+  ],
+  "check": "65536/65536 outputs bit-exact at lag 2",
+  "sim_s": 2.8
+ },
+ {
+  "design": "dcim_g1",
+  "trace": "gauss",
+  "lib": "n45",
+  "glitch": false,
+  "batch": false,
+  "entries": 1,
+  "cells": 7575,
+  "flops": 218,
+  "fJ_per_MAC": 842.0027768246042,
+  "breakdown_fJ_per_MAC": {
+   "switching": 372.52994886987085,
+   "internal": 326.902997147309,
+   "clk_pin_internal": 101.34438989278868,
+   "clk_net": 31.3124335425,
+   "d_hidden": 9.91300737213567
+  },
+  "leak_nW": 190755.4150089995,
+  "leak_fJ_per_MAC_at_500MHz": 23.844426876124935,
+  "macs_per_cycle": 16.0,
+  "latency": [
+   2
+  ],
+  "check": "8192/8192 outputs bit-exact at lag 2",
+  "sim_s": 0.7
+ }
+]

@@ -9,6 +9,7 @@ Everything here is simulation, RTL and synthesis. No fabrication.
 | Folder | What it is | Verdict |
 |---|---|---|
 | [`trackA_phase3/`](trackA_phase3/) | Grant-free activity detection (AMP, ±1 pilots): digital CIM vs ordinary digital logic. RTL, Yosys synthesis on Nangate45 and Sky130, gate-level power on real AMP traces | **NO-GO**: 0.70–0.93× |
+| [`smartnic_A2/`](smartnic_A2/) | Per-packet GRU intrusion detector on a SmartNIC: digital CIM vs an adder-tree array with a k-entry weight store per multiplier (k = 1–64), batched and unbatched, Nangate45 and Sky130 | **NO-GO**: 1.11× pessimistic, 2.18× optimistic |
 | [`phase4/`](phase4/) | Four-axis screen of 29 workloads for SRAM / RRAM CIM (energy, non-volatility, density, analog matrix computing) | **NO-GO** for all candidates; yields an RRAM reuse-per-wake criterion |
 | [`docs/Exploration_log.md`](docs/Exploration_log.md) | Every workload tried so far (24 entries), its baseline, numbers and deciding gate | — |
 | [`tools/make_figures.py`](tools/make_figures.py) | Regenerates every figure below from the committed JSON | — |
@@ -33,6 +34,20 @@ The arithmetic logic costs the same on both sides. CIM loses because it clocks i
 | Naive sign-select adder tree | 1.19 | 1.77 | 1.11 | 1.51 |
 
 Above 1 means CIM is better. The go threshold was 1.3. Details: [`trackA_phase3/REPORT.md`](trackA_phase3/REPORT.md).
+
+### SmartNIC per-packet GRU on digital CIM
+
+At NIC packet rates (75–149 Mpps) each multiplier serves only 4–8 weights. Against the strongest digital design (a small weight store per multiplier, packets of independent flows batched), digital CIM gains 1.16–1.18× without glitches and up to 2.37× at the glitch upper bound. With common overheads that is 1.11–2.18× at system level, which saves at most 0.2% of NIC power at the pessimistic corner.
+
+![Ratio vs cycles per packet](smartnic_A2/figures/fig5_nic_ratio_vs_k.png)
+
+![Energy per MAC](smartnic_A2/figures/fig6_nic_energy_per_mac.png)
+
+The weight store that earlier screens assumed at 20–50 fJ/bit measures 7–27 fJ/bit at 45 nm, so most of CIM's remaining edge is in the datapath, not in avoided weight movement.
+
+![Weight-store cost](smartnic_A2/figures/fig7_nic_store_cost.png)
+
+Details: [`smartnic_A2/REPORT.md`](smartnic_A2/REPORT.md).
 
 ### Phase 4: RRAM reuse-per-wake criterion
 

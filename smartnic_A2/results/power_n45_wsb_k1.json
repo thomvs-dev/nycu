@@ -1,0 +1,27 @@
+[
+ {
+  "design": "wsb_k1",
+  "lib": "n45",
+  "glitch": false,
+  "batch": false,
+  "entries": 1,
+  "cells": 68600,
+  "flops": 378,
+  "fJ_per_MAC": 976.276247812417,
+  "breakdown_fJ_per_MAC": {
+   "switching": 541.9179985174321,
+   "internal": 403.05171627720614,
+   "clk_pin_internal": 21.957480046682633,
+   "clk_net": 6.7867545178125,
+   "d_hidden": 2.5622984532836357
+  },
+  "leak_nW": 1684622.8137897064,
+  "leak_fJ_per_MAC_at_500MHz": 26.322231465464167,
+  "macs_per_cycle": 128,
+  "latency": [
+   2
+  ],
+  "check": "65536/65536 outputs bit-exact at lag 2",
+  "sim_s": 2.0
+ }
+]
